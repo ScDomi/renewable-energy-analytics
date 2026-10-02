@@ -1,45 +1,47 @@
 # Renewable Energy Analytics
 
-A data-analytics case study on Germany's electricity generation from 2018–2023, focused on renewable-energy growth, photovoltaic expansion, weather correlations, and short-term solar-generation forecasting.
+A compact data-analytics case study on Germany's electricity generation from 2018–2023 — renewable-energy growth, photovoltaic expansion, weather correlations, and short-term solar-generation forecasting.
 
-The project started as a university data analytics assignment and has been cleaned into a compact portfolio artifact: one self-contained notebook, one clear story, no lecture dump.
+This is the cleaned portfolio version of an original university project. The repo intentionally keeps the analytical artifact instead of dumping the full course archive.
 
-## What this analyzes
+## Core question
 
-- Germany's electricity mix from 2018 to 2023
-- Renewable vs. non-renewable generation trends
-- Wind onshore vs. offshore generation patterns
-- Solar generation and seasonal/weather effects
-- Photovoltaic expansion across German federal states
-- A simple forecasting model for solar electricity generation
+How did Germany's electricity mix change from 2018 to 2023, and how do weather patterns and photovoltaic expansion relate to solar electricity generation?
 
 ## Main artifact
-
-Open the notebook:
 
 ```text
 notebooks/renewable_energy_analytics.ipynb
 ```
 
-It contains the full workflow:
+The notebook contains the full workflow:
 
 ```text
-data preparation → data quality checks → exploratory analysis → weather correlation → photovoltaic expansion → forecasting
+data preparation
+→ data quality checks
+→ exploratory analysis
+→ renewable vs. conventional generation trends
+→ solar/weather correlation
+→ photovoltaic expansion analysis
+→ short-term solar generation forecast
+→ model limitations
 ```
 
 ## Highlights
 
 - Cleaned and merged multi-year German electricity-generation data
-- Interpreted missing values and data quality issues instead of blindly dropping rows
+- Investigated missing values instead of blindly dropping rows
 - Compared renewable and conventional electricity generation over time
-- Linked solar generation to weather variables such as sunshine duration and shortwave radiation
-- Analyzed photovoltaic installation growth across Germany
-- Built a basic regression-style forecast for short-term solar generation
-- Discussed model limitations and improvement paths
+- Analyzed the nuclear phase-out in the generation data
+- Compared onshore/offshore wind behavior
+- Connected solar generation to weather variables such as sunshine duration and shortwave radiation
+- Explored photovoltaic installation growth across German federal states
+- Built a simple forecasting model for short-term solar generation
+- Documented limitations and realistic improvement paths
 
-## Why it matters
+## Why this is useful
 
-Energy data is messy, seasonal, political, and very real. This project is less about chasing a perfect model and more about showing the full data-analytics loop: asking useful questions, cleaning the data, visualizing patterns, and being honest about what the model can and cannot predict.
+Energy data is messy, seasonal, political, and real. The point of this project is not to pretend that one notebook solves forecasting. The point is to show the full analytics loop: ask useful questions, clean the data, visualize the signal, build a baseline model, and be honest about where the model breaks.
 
 ## Tech stack
 
@@ -54,7 +56,28 @@ Energy data is messy, seasonal, political, and very real. This project is less a
 
 ## Repository scope
 
-This repository intentionally contains only the cleaned portfolio artifact. Original lecture slides, exercises, cache files, side notebooks, and course material were left out.
+Included:
+
+```text
+README.md
+LICENSE
+notebooks/renewable_energy_analytics.ipynb
+```
+
+Not included:
+
+```text
+lecture slides
+exercise folders
+cache files
+side notebooks
+private environment files
+full course archive
+```
+
+## Status
+
+Portfolio-ready case study. The notebook is preserved as the main deliverable because the analysis narrative and visual interpretation are part of the work.
 
 ## License
 
